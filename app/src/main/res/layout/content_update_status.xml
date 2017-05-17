@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.junyang.bmpt.UpdateStatus"
+    tools:showIn="@layout/app_bar_update_status">
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_statushis"
+        android:layout_marginTop="47dp"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19"
+        android:text="Apply" />
+
+    <Spinner
+        android:id="@+id/spn_substatus"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_status"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="51dp"
+        android:text="ID"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_id"
+        android:layout_alignStart="@+id/tv_id"
+        android:layout_below="@+id/tv_id"
+        android:layout_marginTop="48dp"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="44dp"
+        android:text="Gender"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_race"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_gender"
+        android:layout_alignStart="@+id/tv_gender"
+        android:layout_below="@+id/tv_gender"
+        android:layout_marginTop="44dp"
+        android:text="Race"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_race"
+        android:layout_alignStart="@+id/tv_race"
+        android:layout_below="@+id/tv_race"
+        android:layout_marginTop="45dp"
+        android:text="Status"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_statushis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_status"
+        android:layout_alignStart="@+id/tv_status"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginTop="52dp"
+        android:text="Status History"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_apply"
+        android:layout_alignBottom="@+id/btn_apply"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/btn_apply"
+        android:layout_toRightOf="@+id/btn_apply"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_above="@+id/tv_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_gender"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_alignRight="@+id/textView15"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_gender"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_status"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignRight="@+id/textView17"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_statushis"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spn_status"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spn_substatus"
+        android:layout_alignLeft="@+id/spn_substatus"
+        android:layout_alignStart="@+id/spn_substatus" />
+
+</RelativeLayout>
